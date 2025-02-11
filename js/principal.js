@@ -19,6 +19,9 @@ empresa.procesarVendedor(vendedor2);
 empresa.procesarVendedor(vendedor3);
 empresa.procesarVendedor(vendedor4);
 
-alert("Cantidad de ventas menores o iguales a 100: " + empresa.cantidadVentasMenoresOIgual100());
-alert("Ventas mayores a 100: " + empresa.cantidadVentasMayores100());
-alert("Monto total de ventas: $" + empresa.montoTotalVentas());
+let salida = document.getElementById ("Salida");
+
+salida.innerHTML =`
+    Cantidad de ventas menores o iguales a 100: ${empresa.cantidadVentasMenoresOIgual100()}<br>
+    Cantidad de ventas mayores a 100: ${empresa.cantidadVentasMayores100()}<br>
+    Monto total de ventas: $${empresa.montoTotalVentas()}<br>`;
