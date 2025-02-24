@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ventas Vendedores</title>
 </head>
 <body>
-    <div id="Salida"></div>
-    <script src="./js/principal.js" type="module"></script>
+    <section id="mainForm">
+        <h3>Ventas Venderores</h3>
+        <table id="mainForm_tabla">
+            <tr>
+                <th>nombre</th>
+                <th>venta</th>
+            </tr>
+        </table>
+        <h5>Cantidad de ventas menores o iguales a 100: <span id="mainForm_lblCantidadVentasMenoresOIgual100">?</span></h5>
+        <h5>Cantidad de ventas mayores a 100: <span id="mainForm_lblCantidadVentasMayores100">?</span></h5>
+        <h5>Monto total en $ de todas las ventas: <span id="mainForm_lblMontoTotalVentas">?</span></h5>
+        <button id="mainForm_btAgregar">Agregar</button>
+    </section>
+    <section id="vendedoresForm">
+        <h3>Agregar Vendedor</h3>
+        <input type="text" id="vendedoresForm_inNombre" placeholder="Ingrese el nombre del vendedor"></input>
+        <input type="text" id="vendedoresForm_inVenta" placeholder="Ingrese el monto de la venta"></input>
+        <button id="vendedoresForm_btAceptar">Aceptar</button>
+    </section>
 </body>
+<script type="module">
+    import principal from "./js/principal.js";
+    new principal();
+</script>
 </html>

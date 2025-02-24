@@ -1,11 +1,11 @@
-import Cl_vendedores from "./Cl_vendedores.js";
-export default class Cl_empresa {
+import Cl_mVendedores from "./Cl_mVendedores.js";
+export default class Cl_mEmpresa {
     constructor () {
         this.acumVentas = 0;
         this.contVentasMay100 = 0;
         this.contVentasMen100 = 0;
     }
-    procesarVendedor (v) {
+    procesarVendedores (v) {
         this.acumVentas += v.venta;
         if (v.venta > 100) this.contVentasMay100 += 1;
         if (v.venta <= 100) this.contVentasMen100 += 1;
